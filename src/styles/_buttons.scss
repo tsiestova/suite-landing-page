@@ -1,0 +1,55 @@
+.btn {
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  height: 49px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn__primary {
+  background: var(--color1);
+  color: var(--color4);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  height: 61px;
+  padding: 13px 32px;
+
+  &:hover {
+    background: linear-gradient(
+      135deg,
+      #a060ff 0%,
+      #cb30e3 49.21%,
+      #ffa84e 100%
+    );
+  }
+}
+
+.btn__secondary {
+  background: transparent;
+  border: 1px solid #172339;
+  border-radius: 6px;
+
+  @include breakpoint(tablet) {
+    padding: 12px 24px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.16px;
+  }
+
+  &:hover {
+    background: var(--color1);
+    color: #faf8f6;
+  }
+}

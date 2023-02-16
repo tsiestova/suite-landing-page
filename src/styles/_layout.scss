@@ -1,0 +1,17 @@
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.layout {
+  padding: 0 15px;
+
+  @include breakpoint(tablet) {
+    max-width: 689px;
+    margin: auto;
+    padding: 0;
+  }
+
+  @include breakpoint(desktop) {
+    max-width: 1110px;
+  }
+}

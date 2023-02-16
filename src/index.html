@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Suite landing page</title>
+</head>
+<body>
+<div class="page__wrap">
+    <header class="header">
+        <div class="layout">
+            <figure class="logo__wrap">
+                <img src="./assets/logo.svg" alt="">
+            </figure>
+            <div class="btn btn__secondary">Request Beta Access</div>
+        </div>
+    </header>
+    <main class="main__container">
+        <div class="main__container__top-box">
+            <div class="layout">
+                <div class="top-box__wrap">
+                    <div class="main__container__info-wrap">
+                        <div class="top-box__heading">A
+                            <span class="heading-bold">super solution</span>
+                            for your <span class="heading-bold">business.</span>
+                        </div>
+                        <div class="top-box__description">Our marketing and sales automations help you scale your outreach
+                            to
+                            get more leads for your company.
+                        </div>
+                        <div class="btn btn__primary">Request Beta Access</div>
+                    </div>
+                    <picture class="top-box__img">
+                        <source
+                                media="(min-width: 900px)"
+                                srcset="
+                ./assets/image-hero-portrait.png,
+                ./assets/image-hero-portrait@2x.png
+              "
+                                type="image/png"
+                        />
+                        <source
+                                media="(min-width: 900px)"
+                                srcset="
+                    ./assets/image-hero-portrait.webp,
+                   ./assets/image-hero-portrait@2x.webp"
+                                type="image/webp"
+                        />
+                        <source
+                                media="(min-width: 601px)"
+                                srcset="
+                ./assets/image-hero-portrait.png,
+                ./assets/image-hero-portrait@2x.png
+              "
+                                type="image/png"
+                        />
+                        <source
+                                media="(min-width: 601px)"
+                                srcset="
+                ./assets/image-hero-landscape.webp,
+                ./assets/image-hero-landscape@2x.webp
+              "
+                                type="image/webp"
+                        />
+                        <source
+                                srcset="
+                ./assets/image-hero-landscape.png,
+                ./assets/image-hero-landscape@2x.png
+              "
+                                type="image/png"
+                        />
+                        <source
+                                srcset="
+                ./assets/image-hero-landscape.webp,
+                ./assets/image-hero-landscape@2x.webp
+              "
+                                type="image/webp"
+                        />
+                        <img
+                                srcset="
+                ./assets/image-hero-landscape.png  600w,
+                ./assets/image-hero-portrait.png   900w,
+                ./assets/image-hero-portrait.png 1440w
+              "
+                                src="./assets/image-jeremy-large.png"
+                                type="image/png"
+                                alt="image description"
+                        />
+                    </picture>
+                </div>
+
+                <ul class="main__container__advantages-list">
+                    <li class="main__container__advantages-item">
+                        <div class="item__number">2K+</div>
+                        <div class="item__name">COMPANIES</div>
+                    </li>
+                    <li class="main__container__advantages-item">
+                        <div class="item__number">8</div>
+                        <div class="item__name">LANGUAGES</div>
+                    </li>
+                    <li class="main__container__advantages-item">
+                        <div class="item__number">1.2M</div>
+                        <div class="item__name">LEADS</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-container__response-block">
+            <picture class="response-block__img">
+                <source
+                        media="(min-width: 900px)"
+                        srcset="
+                ./assets/image-jeremy-small@2x.png,
+                ./assets/image-jeremy-small.png
+              "
+                        type="image/png"
+                />
+                <source
+                        media="(min-width: 900px)"
+                        srcset="
+                    ./assets/image-jeremy-large.webp,
+                   ./assets/image-jeremy-large@2x.webp"
+                        type="image/webp"
+                />
+                <source
+                        media="(min-width: 601px)" s
+                        srcset="
+                ./assets/image-jeremy-large.png    1x,
+                ./assets/image-jeremy-large@2x.png 2x
+              "
+                        type="image/png"
+                />
+                <source
+                        media="(min-width: 601px)"
+                        srcset="
+                ./assets/image-jeremy-large.webp,
+                ./assets/image-jeremy-large@2x.webp
+              "
+                        type="image/webp"
+                />
+                <source
+                        srcset="
+                ./assets/image-jeremy-small.png    1x,
+                ./assets/image-jeremy-small@2x.png
+              "
+                        type="image/png"
+                />
+                <source
+                        srcset="
+                ./assets/image-jeremy-small.webp,
+                ./assets/image-jeremy-small@2x.webp
+              "
+                        type="image/webp"
+                />
+                <img
+                        srcset="
+                ./assets/image-jeremy-small.png  600w,
+                ./assets/image-jeremy-large.png   900w,
+                ./assets/image-jeremy-large.png 1440w
+              "
+                        src="./assets/image-jeremy-large.png"
+                        type="image/png"
+                        alt="image description"
+                />
+            </picture>
+            <div class="layout">
+                <div class="response-block__heading">It just
+                    <span class="heading-bold">works.</span></div>
+                <div class="response__description">“I really like how it is an all-in-one solution that handle many of the
+                    tasks that you would normally need separate tools to do the same job. This thing is a miracle worker.”
+                </div>
+                <div class="response__author">Jeremy Robinson</div>
+                <div class="response__status">CMO, Fylo</div>
+            </div>
+        </div>
+    </main>
+</div>
+<footer class="footer">
+    <div class="layout">
+        <figure class="logo__wrap">
+            <img src="./assets/logo.svg" alt="">
+        </figure>
+        <div class="footer__copyright">Copyright - Suite</div>
+        <ul class="social-media__list">
+            <li class="social-media__item social-media__item-facebook">
+                <img src="./assets/icon-facebook.svg" alt="">
+            </li>
+            <li class="social-media__item social-media__item-facebook">
+                <img src="./assets/icon-twitter.svg" alt="">
+            </li>
+            <li class="social-media__item social-media__item-facebook">
+                <img src="./assets/icon-instagram.svg" alt="">
+            </li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
