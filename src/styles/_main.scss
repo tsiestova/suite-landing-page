@@ -1,5 +1,7 @@
 .page__wrap {
-  padding: 0 30px;
+  @include breakpoint(tablet) {
+    padding: 0 30px;
+  }
 }
 
 .header {
@@ -271,29 +273,26 @@
   position: absolute;
   left: 25px;
   right: 0;
-  top: -93%;
+  top: -700px;
   bottom: 0;
   margin: auto;
   width: 252px;
-  height: 402px;
+  height: 100%;
 
-  @include breakpoint(desktop) {
-    left: auto;
-    right: auto;
-    top: -50px;
-    width: 359px;
-    height: 589px;
+  @include breakpoint(tablet) {
+    top: -586px;
+    height: 460px;
+    width: auto;
+    left: 4px;
   }
 
-  //&:before {
-  //  content: "";
-  //  background: url(./assets/pattern-blur.svg) no-repeat;
-  //  position: absolute;
-  //  height: 100%;
-  //  top: -18%;
-  //  right: 0;
-  //  left: -20%;
-  //}
+  @include breakpoint(desktop) {
+    height: 699px;
+    width: auto;
+    left: 8px;
+    top: 45px;
+    right: auto;
+  }
 
   img {
     width: 100%;

@@ -8,6 +8,7 @@
   display: inline-block;
   text-align: center;
   padding: 12px 15px;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
@@ -38,6 +39,7 @@
   background: transparent;
   border: 1px solid #172339;
   border-radius: 6px;
+  color: var(--color1);
 
   @include breakpoint(tablet) {
     padding: 12px 24px;
@@ -50,6 +52,6 @@
 
   &:hover {
     background: var(--color1);
-    color: #faf8f6;
+    color: var(--color4);
   }
 }
